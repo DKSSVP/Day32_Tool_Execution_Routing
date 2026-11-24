@@ -1,0 +1,20 @@
+Day 32 - Tool Execution Routing
+
+Test Case 1: Valid function call
+Input: calculate_total(quantity=5, unit_price=100)
+Expected Output: 500
+Actual Output: 500
+Status: PASS
+
+Test Case 2: Unknown function
+Input: unknown_function
+Expected Output: Unknown function error
+Actual Output: Unknown function error
+Status: PASS
+
+Test Case 3: Tool message preparation
+Expected Output: Tool result returned in message structure
+Actual Output: {'role': 'tool', 'name': 'calculate_total', 'content': '500'}
+Status: PASS
+
+Overall Status: ALL TESTS PASSED
