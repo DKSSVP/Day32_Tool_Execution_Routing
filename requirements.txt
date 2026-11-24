@@ -1,1 +1,2 @@
-# No external dependencies required
+openai==3.31.0
+python-dotenv==1.2.4

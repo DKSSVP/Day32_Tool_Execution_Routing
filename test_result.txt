@@ -1,20 +1,32 @@
-Day 32 - Tool Execution Routing
 
-Test Case 1: Valid function call
-Input: calculate_total(quantity=5, unit_price=100)
-Expected Output: 500
-Actual Output: 500
+DAY 32 - TOOL EXECUTION ROUTING
+================================
+
+Provider: OpenRouter
+Model: openrouter/auto
+
+Test Case 1: OpenRouter API Connection
 Status: PASS
 
-Test Case 2: Unknown function
-Input: unknown_function
-Expected Output: Unknown function error
-Actual Output: Unknown function error
+Test Case 2: LLM Function Call
+Function: calculate_total
 Status: PASS
 
-Test Case 3: Tool message preparation
-Expected Output: Tool result returned in message structure
-Actual Output: {'role': 'tool', 'name': 'calculate_total', 'content': '500'}
+Test Case 3: Argument Extraction
+quantity = 5
+unit_price = 100
+Status: PASS
+
+Test Case 4: Local Tool Execution
+Expected Result: 500
+Actual Result: 500
+Status: PASS
+
+Test Case 5: Tool Result Returned to LLM
+Status: PASS
+
+Test Case 6: Final LLM Response
+Output: The total for 5 items at 100 each is 500.
 Status: PASS
 
 Overall Status: ALL TESTS PASSED
